@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Hyndman</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/turtle.ico">
+    <script src="style.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-wrapper">
+                <a class="logo" href="index.html"> <strong>Matthew Hyndman</strong></a>
+            </div>
+
+            <ul class="navbar-links">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="header">
+        <div class="container">
+            <div class="box">
+                <h4 class="">Hi!</h4>
+                <h1 class="">I'm Matthew Hyndman</h1>
+                <p class="">
+                    I am a photography student based in Northern Ireland.
+                </p>
+                <a href="https://www.flickr.com/people/185425620@N08/" class="btn" target="_blank">My Work</a>
+                <a href="#contact" class="btn">Contact me</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- About section -->
+    <section class="about bg-light" id="about">
+        <div class="container">
+
+            <div class="box about-box">
+                <h2 class="title">
+                    Matthew Hyndman, a photography student based in Northern Ireland.
+                </h2>
+                <br>
+                <p>
+                    Matthew Hyndman is a 26-year-old photographer from Northern Ireland. With a keen eye for detail and an unwavering passion for photography, 
+                    Hyndman pushes himself to learn new creative techniques and approaches to his work through consistent research and experimentation.
+                </p>
+                <br>
+                <p>
+                    Hyndman developed a profound love for the natural world from a young age, which is reflected in his work. His photographs, often serving as a call to action for nature preservation, 
+                    are created with the philosophy that animal subjects should be captured in the same manner as one would photograph a person; this has led to the creation of a visually rich, highly composed fine 
+                    art portfolio, appealing to both nature photography admirers and general audiences alike.
+                </p>
+                <br>
+                <p>
+                    Hyndman's work is not just about capturing stunning images; it's about making a difference. Inspired by historical pioneers and contemporary leaders in wildlife photography, 
+                    his lens has championed various conservation causes. From documenting endangered animals to battling the stigma against reptiles, his work is a testament to his commitment to the environment.
+                </p>
+                <br>
+                <p>
+                    Matthew hopes his work resonates with viewers and provokes interest and contemplation on our role as a species in Earth's larger food chain and what we can do to promote environmental conscientiousness.
+                </p>
+            </div>
+
+            <div class="about-img">
+                <div class="img">
+                    <img src="./images/portrait.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Gallery -->
+    <section class="gallery bg-dark" id="gallery">
+        <div class="heading">
+            <h2 class="title">Gallery</h2>
+        </div>
+        <div class="container">
+            <ul>
+                <li class="active" data-filter="*">All</li>
+                <li data-filter=".wildlife">Wildlife</li>
+                <li data-filter=".ghosts">Ghosts - University Showcase</li>
+            </ul>            
+        </div>
+        <div class="container">
+            <div class="ghostbox ghosts">
+                <h2 class="title">
+                    University Project - Ghosts
+                </h2>
+                <br>
+                <p>
+                    Ghosts is a project that aims to convey the hardships and tragedies modern species face on the brink of extinction. As someone who became
+                    interested in the natural world at a young age, I find the topic of modern conservation very important.
+                </p>
+                <br>
+                <p>
+                    Throughout my life, the environmental crisis has gradually become critical for animals and their habitats worldwide. Globally unique species are destroyed or 
+                    threatened by human practices.  African Elephant numbers are now only sustained by human intervention. The African white rhino is functionally extinct in the wild, and within the 
+                    last one hundred years, the Thylacine has been exterminated and forgotten by most people alive today.
+                </p>
+                <br>
+                <p>
+                    Heavily inspired by found footage and cryptid investigative media, I'm taking a unique approach to raising awareness. I combine 3D printing with abstract camera techniques and 
+                    editing to create visually striking representations of endangered and extinct creatures. During the creation process of each image, I studied its individual subjects, deepening my 
+                    understanding of the fragility of ecosystems and ways we can protect our environments. I hope to convey the emotional tragedy of the environmental crisis through the visual style and 
+                    narratives displayed within ghosts as a photography project.
+                </p>
+                <br>
+                <p>
+                    Click on each image to open them in a new tab and view them in full resolution.
+                </p>
+                <br>
+            </div>
+
+            <div class="grid-wrapper">
+                
+                <div class="image wide wildlife">
+                    <img src="./images/album/wolf1.jpg" alt="" onclick="openInNewTab('./images/album/wolf1.jpg')" loading="lazy"/>
+                </div>
+                <div class="image wide wildlife">
+                    <img src="./images/album/wolf2.jpg" alt="" onclick="openInNewTab('./images/album/wolf2.jpg')" loading="lazy"/>
+                </div>
+                <div class="image tall wildlife">
+                    <img src="./images/album/wolf3.jpg" alt="" onclick="openInNewTab('./images/album/wolf3.jpg')" loading="lazy"/>
+                </div>
+                <div class="image wide wildlife">
+                    <img src="./images/album/fox.jpg" alt="" onclick="openInNewTab('./images/album/fox.jpg')" loading="lazy"/>
+                </div>
+                <div class="image wide wildlife">
+                    <img src="./images/album/20200708120958_IMG_3187.jpg" alt="" onclick="openInNewTab('./images/album/20200708120958_IMG_3187.jpg')" loading="lazy"/>
+                </div>
+                <div class="image wide wildlife">
+                    <img src="./images/album/20200708124121_IMG_3338 1.jpg" alt="" onclick="openInNewTab('./images/album/20200708124121_IMG_3338.jpg')" loading="lazy"/>
+                </div>
+                <div class="image tall wildlife">
+                    <img src="./images/album/barn owl - Copy.jpg" alt="" onclick="openInNewTab('./images/album/barn owl - Copy.jpg')" loading="lazy"/>
+                </div>
+                <div class="image wide wildlife">
+                    <img src="./images/album/complete buzzard.jpg" alt="" onclick="openInNewTab('./images/album/complete buzzard.jpg')" loading="lazy"/>
+                </div>
+                <div class="image wide wildlife">
+                    <img src="./images/album/IMG_8114.jpg" alt="" onclick="openInNewTab('./images/album/IMG_8114.jpg')" loading="lazy"/>
+                </div>
+                <div class="image wide wildlife">
+                    <img src="./images/album/IMG_8285.jpg" alt="" onclick="openInNewTab('./images/album/IMG_8285.jpg')" loading="lazy"/>
+                </div>
+                <div class="image tall wildlife">
+                    <img src="./images/album/IMG_8305 (1).jpg" alt="" onclick="openInNewTab('./images/album/IMG_8305 (1).jpg')" loading="lazy"/>
+                </div>
+                <div class="image wide wildlife">
+                    <img src="./images/album/IMG_8397 (2).jpg" alt="" onclick="openInNewTab('./images/album/IMG_8397 (2).jpg')" loading="lazy"/>
+                </div>
+                <div class="image wide wildlife">
+                    <img src="./images/album/IMG_9409.jpg" alt="" onclick="openInNewTab('./images/album/IMG_9409.jpg')" loading="lazy"/>
+                </div>
+                <div class="image wide wildlife">
+                    <img src="./images/album/snake.jpg" alt="" onclick="openInNewTab('./images/album/snake.jpg')" loading="lazy"/>
+                </div>
+                <div class="image tall wildlife">
+                    <img src="./images/album/snakebw.jpg" alt="" onclick="openInNewTab('./images/album/snakebw.jpg')" loading="lazy"/>
+                </div>
+                <div class="image tall ghosts">
+                    <img src="./images/album/portfolio images-01.jpg" alt="" onclick="openInNewTab('./images/album/portfolio images-01.jpg')"/>
+                </div>
+                <div class="image tall ghosts">
+                    <img src="./images/album/portfolio images-02.jpg" alt="" onclick="openInNewTab('./images/album/portfolio images-02.jpg')"/>
+                </div>
+                <div class="image wide ghosts">
+                    <img src="./images/album/portfolio images-03.jpg" alt="" onclick="openInNewTab('./images/album/portfolio images-03.jpg')"/>
+                </div>
+                <div class="image tall ghosts">
+                    <img src="./images/album/portfolio images-04.jpg" alt="" onclick="openInNewTab('./images/album/portfolio images-04.jpg')"/>
+                </div>
+                <div class="image tall ghosts">
+                    <img src="./images/album/portfolio images-05.jpg" alt="" onclick="openInNewTab('./images/album/portfolio images-05.jpg')"/>
+                </div>
+                <div class="image wide ghosts">
+                    <img src="./images/album/portfolio images-06.jpg" alt="" onclick="openInNewTab('./images/album/portfolio images-06.jpg')"/>
+                </div>
+                <div class="image tall ghosts">
+                    <img src="./images/album/portfolio images-08.jpg" alt="" onclick="openInNewTab('./images/album/portfolio images-08.jpg')"/>
+                </div>
+                <div class="image wide ghosts">
+                    <img src="./images/album/portfolio images-09.jpg" alt="" onclick="openInNewTab('./images/album/portfolio images-09.jpg')"/>
+                </div>
+                <div class="image wide ghosts">
+                    <img src="./images/album/portfolio images-10.jpg" alt="" onclick="openInNewTab('./images/album/portfolio images-10.jpg')"/>
+                </div>
+                <div class="image tall ghosts">
+                    <img src="./images/album/portfolio images-11.jpg" alt="" onclick="openInNewTab('./images/album/portfolio images-11.jpg')"/>
+                </div>
+                <div class="image wide ghosts">
+                    <img src="./images/album/portfolio images-12.jpg" alt="" onclick="openInNewTab('./images/album/portfolio images-12.jpg')"/>
+                </div>
+                <div class="image tall ghosts">
+                    <img src="./images/album/portfolio images-13.jpg" alt="" onclick="openInNewTab('./images/album/portfolio images-13.jpg')"/>
+                </div>
+                <div class="image wide ghosts">
+                    <img src="./images/album/portfolio images-14.jpg" alt="" onclick="openInNewTab('./images/album/portfolio images-14.jpg')"/>
+                </div>
+                <div class="image tall ghosts">
+                    <img src="./images/album/portfolio images-15.jpg" alt="" onclick="openInNewTab('./images/album/portfolio images-15.jpg')"/>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Modal - OPENS IMAGES IN NEW TAB! -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <a href="#" id="modalLink" target="_blank">
+            <img class="modal-content" id="modalImg">
+        </a>
+        <div class="button-container">
+            <button class="prev" onclick="prevImage()">&#10094;</button>
+            <button class="next" onclick="nextImage()">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <section class="contact bg-light" id="contact">
+        <div class="container">
+
+            <div class="contactbox">
+                <h2 class="title">
+                    Need to get in contact with me?
+                </h2>
+                <ul>
+                    <li>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <span>ghxst.indigo</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-at" aria-hidden="true"></i>
+                        <span>matthew.hyndman@hotmail.com</span>
+
+                    </li>
+                    <li>
+                        <i class="fa fa-location-pin" aria-hidden="true"></i>
+                        <span>Belfast School of Art, Ulster University</span>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="second-footer">
+            <div class="container">
+                <div class="box">
+                    <div class="logo-wrapper">
+                        <a class="logo" href="index.html"> <strong>Matthew Hyndman</strong></a>
+                    </div>
+                    <div class="text">
+                        <p>Matthew Hyndman, a photography student based in Northern Ireland.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h3 class="title">Contact</h3>
+                    <ul>
+                        <li>
+                            <i class="fa fa-instagram"></i>
+                            <span>
+                                ghxst.indigo
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fa fa-at"></i>
+                            <span>
+                                matthew.hyndman@hotmail.com
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fa fa-location-pin"></i>
+                            <span>
+                                Belfast School of Art, Ulster University
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
