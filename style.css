@@ -98,23 +98,27 @@ section .contactbox {
 }
 
 
+
 /* About styles */
-.about-img.fade-in {
-    opacity: 1;
+/* For smaller screens, adjust the size of the image */
+@media only screen and (max-width: 768px) {
+    .about-img {
+        width: 100%;
+        min-width: unset; 
+    }
+
+    .about-img .img {
+        width: 100%; 
+        padding: 0;
+    }
+
+    .about-img .img img {
+        height: auto; 
+        max-width: 100%; 
+        border-radius: 0;
+    }
 }
 
-.about-img {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-
-    width: 50%;
-    min-width: 300px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
 
 .about-img .img:before {
     content: '';
@@ -129,7 +133,7 @@ section .contactbox {
 
 
 .about-img .img {
-    width: 600px;
+    width: 550px;
     padding: 0 30px 30px 15px;
     position: relative;
 }
