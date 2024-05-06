@@ -108,16 +108,23 @@ section .contactbox {
     }
 
     .about-img .img {
-        width: 100%; 
+        width: 80%; /* Reduce width */
         padding: 0;
     }
 
     .about-img .img img {
-        height: auto; 
-        max-width: 100%; 
+        width: 100%; /* Set width to 100% to maintain aspect ratio */
+        max-width: 30vh; /* Adjusted max-width for smaller screens */
+        max-height: 30vh; /* Maximum height for the image */
         border-radius: 0;
     }
+
+    .about-img .img:before {
+        max-width: 30vh; 
+    }
+    
 }
+
 
 
 .about-img .img:before {
